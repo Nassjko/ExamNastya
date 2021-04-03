@@ -1,239 +1,228 @@
-            html,
-            body {
-                margin: 0 auto;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            
-            .section-search {
-                max-width: 1770px;
-                width: 100%;
-                height: 740px;
-                background: url(/assets/background.svg) center / cover no-repeat;
-                background-size: contain;
-                background-size: auto; // position: relative;
-                margin: 0 auto;
-                padding: 0;
-                display: flex; // FlexBox
-                flex-direction: column;
-                justify-content: center;
-                &__title {
-                    &__name {
-                        font-size: 48px;
-                        letter-spacing: 5px;
-                        line-height: 26px;
-                        color: #ffffff;
-                        font-weight: 700;
-                        font-family: "Josefin Sans", sans-serif;
-                        text-align: center;
-                        margin: 0;
-                    }
-                    &__subtitle {
-                        font-size: 22px;
-                        letter-spacing: 7px;
-                        line-height: 26px;
-                        color: #ffffff;
-                        font-weight: 300;
-                        font-family: "Josefin Sans", sans-serif;
-                        text-align: center;
-                    }
-                }
-            }
-            
-            .section-search__search-container {
-                margin: 0;
-                padding: 0;
-                // position: absolute;
-                // top: 50%;
-                // left: 50%;
-                // bottom: 50%;
-                // right: 50%;
-                width: 100%;
-                // height: 20%;
-                display: flex; // FlexBox
-                align-items: center; // выравнивает по вертикали 
-                justify-content: center;
-            }
-            
-            .section-search__form {
-                position: relative;
-            }
-            
-            .section__input1 {
-                width: 650px;
-                position: relative;
-                height: 60px;
-            }
-            
-            .section__input2 {
-                width: 145px;
-                position: absolute;
-                top: 2px;
-                right: 7px;
-                height: 56px;
-            }
-            
-            .section-search-input {
-                height: 59px;
-                width: 650px;
-                border: none;
-                font-size: 14px;
-                letter-spacing: 3px;
-                color: #999999;
-                font-family: "Josefin Sans";
-                text-align: center;
-            }
-            
-            .section-button {
-                color: #fefefe;
-                height: 56px;
-                padding: 0;
-                line-height: 33px;
-                cursor: pointer;
-                background-color: #5474fd;
-                border: none;
-            }
-            
-            .section-button::-moz-placeholder {
-                color: #ffffff;
-            }
-            
-            .section-button::-webkit-input-placeholder {
-                color: #ffffff;
-                font-size: 14px;
-                letter-spacing: 1px;
-                line-height: 26px;
-                color: #ffffff;
-                font-weight: 400;
-                font-family: "Aleo", serif;
-                text-align: center;
-            }
-            
-            .section-search__toDown {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 50px;
-            }
-            
-            .section-search__toDown {
-                // position: absolute;
-                // z-index: 99;
-                width: 84px;
-                height: 84px;
-                color: #fefefe;
-                width: 100%;
-                fill: #fefefe;
-                cursor: pointer;
-            }
-            
-            .section-search__toDown:active {
-                background-color: rgba(110, 102, 182, .5)
-            }
-            
-            .section-menu {
-                margin: 0 auto;
-                padding: 0;
-                width: 100%;
-                max-width: 1770px;
-                height: 80px;
-                background-color: #5474fd;
-                display: flex;
-                justify-content: flex-end;
-            }
-            
-            .menu-logo {}
-            
-            .menu-logo_name {
-                font-size: 24px;
-                letter-spacing: 2px;
-                line-height: 26px;
-                color: #ffffff;
-                font-weight: 700;
-                font-family: "Josefin Sans";
-            }
-            
-            .section-link {
-                padding: 0 310px;
-                display: flex;
-                justify-content: flex-end;
-                &__menu-link {
-                    font-size: 14px;
-                    line-height: 26px;
-                    color: #ffffff;
-                    font-weight: 400;
-                    font-family: "Aleo", serif;
-                    text-align: center;
-                    cursor: pointer;
-                    text-decoration: none;
-                    padding: 20px;
-                }
-            }
-            
-            .section-places {
-                max-width: 1770px;
-                width: 100%;
-                height: 690px;
-                margin: 0 auto;
-                padding: 0;
-            }
-            
-            .places-toexplore {
-                background: url('/assets/places.svg') center / cover no-repeat;
-                max-width: 1770px;
-                width: 100%;
-                height: 690px;
-                margin: 0 auto;
-                padding: 0;
-                background-position: bottom;
-            }
-            
-            .places-scheme {
-                background-color: #333333;
-                max-width: 1770px;
-                width: 100%;
-                height: 335px;
-                margin: 0 auto;
-                padding: 0;
-            }
-            
-            .section-tobook {
-                max-width: 1770px;
-                width: 100%;
-                height: 700px;
-                margin: 0 auto;
-                padding: 0;
-            }
-            
-            // .tobook-blok1 {
-            //     background: url('/assets/tobook2.svg') center / cover no-repeat;
-            //     max-width: 1770px;
-            //     width: 100%;
-            //     height: 700px;
-            //     margin: 0 auto;
-            //     padding: 0;
-            //     background-position: bottom;
-            // }
-            .section-review {
-                background-image: url('/assets/Rectangle\ 4142.svg');
-                max-width: 1770px;
-                width: 100%;
-                height: 700px;
-                margin: 0 auto;
-                padding: 0;
-                & .card {
-                    flex-direction: row;
-                    align-items: center;
-                    background: #333333;
-                    border-radius: 0;
-                }
-                & .card img {
-                    width: 40%;
-                    border-radius: 0;
-                }
-            }
-            
-            .bg-image {
-                min-height: 650px;
-                background-size: cover;
-            }
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-search {
+    max-width: 1770px;
+    width: 100%;
+    height: 740px;
+    background: url(/assets/background.svg) center / cover no-repeat;
+    background-size: contain;
+    background-size: auto; // position: relative;
+    margin: 0 auto;
+    padding: 0;
+    display: flex; // FlexBox
+    flex-direction: column;
+    justify-content: center;
+    &__title {
+        &__name {
+            font-size: 48px;
+            letter-spacing: 5px;
+            line-height: 26px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Josefin Sans", sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+        &__subtitle {
+            font-size: 22px;
+            letter-spacing: 7px;
+            line-height: 26px;
+            color: #ffffff;
+            font-weight: 300;
+            font-family: "Josefin Sans", sans-serif;
+            text-align: center;
+            margin: 16px;
+        }
+    }
+}
+
+.section-search__search-container {
+    margin: 0;
+    padding: 0;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // bottom: 50%;
+    // right: 50%;
+    width: 100%;
+    // height: 20%;
+    display: flex; // FlexBox
+    align-items: center; // выравнивает по вертикали 
+    justify-content: center;
+}
+
+.section-search__form {
+    position: relative;
+}
+
+.section__input1 {
+    width: 650px;
+    position: relative;
+    height: 60px;
+}
+
+.section__input2 {
+    width: 145px;
+    position: absolute;
+    top: 2px;
+    right: 39px;
+    height: 56px;
+}
+
+.section-search-input {
+    height: 59px;
+    width: 650px;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #999999;
+    font-family: "Josefin Sans";
+    text-align: center;
+}
+
+.section-button {
+    color: #fefefe;
+    height: 56px;
+    padding: 0;
+    line-height: 33px;
+    cursor: pointer;
+    background-color: #5474fd;
+    border: none;
+}
+
+.section-button::-moz-placeholder {
+    color: #ffffff;
+}
+
+.section-button::-webkit-input-placeholder {
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Aleo", serif;
+    text-align: center;
+}
+
+.section-search__toDown,
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.section-menu {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1770px;
+    height: 80px;
+    background-color: #5474fd;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-logo {}
+
+.menu-logo_name {
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Josefin Sans";
+    margin: 30px;
+}
+
+.section-link {
+    padding: 0 310px;
+    display: flex;
+    justify-content: flex-end;
+    &__menu-link {
+        font-size: 14px;
+        line-height: 26px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Aleo", serif;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 0;
+    }
+}
+
+.section-places {
+    max-width: 1770px;
+    width: 100%;
+    height: 690px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.places-toexplore {
+    background: url('/assets/places.svg') center / cover no-repeat;
+    max-width: 1770px;
+    width: 100%;
+    height: 690px;
+    margin: 0 auto;
+    padding: 0;
+    background-position: bottom;
+}
+
+.places-scheme {
+    background-color: #333333;
+    max-width: 1770px;
+    width: 100%;
+    height: 335px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.section-tobook {
+    max-width: 1770px;
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+// .tobook-blok1 {
+//     background: url('/assets/tobook2.svg') center / cover no-repeat;
+//     max-width: 1770px;
+//     width: 100%;
+//     height: 700px;
+//     margin: 0 auto;
+//     padding: 0;
+//     background-position: bottom;
+// }
+.section-review {
+    background-image: url('/assets/Rectangle\ 4142.svg');
+    max-width: 1770px;
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    padding: 0;
+    & .card {
+        flex-direction: row;
+        align-items: center;
+        background: #333333;
+        border-radius: 0;
+    }
+    & .card img {
+        width: 40%;
+        border-radius: 0;
+    }
+}
+
+.bg-image {
+    min-height: 650px;
+    background-size: cover;
+}
